@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ab3535"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#676767">
+
+        <SearchView
+            android:id="@+id/contact_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ffff"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/contacts_tv"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="9.9"
+            android:gravity="center"
+            android:text="Contacts"
+            android:textColor="#F000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffff"
+            android:src="@drawable/ic_add_black_24dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/contacts_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:scrollbars="vertical"/>
+
+
+</LinearLayout>

@@ -4,20 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_gravity="bottom"
         android:background="#cccccc"
-        app:itemIconTint="#464646"
-        app:itemTextColor="#666666"
+        app:itemIconTint="@drawable/bottom_bar_color"
+        app:itemTextColor="@drawable/bottom_bar_color"
         app:menu="@menu/navigation_items" />
 
 
-    <LinearLayout
-        android:id="@+id/fragment_lo"
+    <FrameLayout
+        android:id="@+id/container_fr"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="56dp"

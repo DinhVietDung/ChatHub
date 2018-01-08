@@ -24,7 +24,7 @@
     </FrameLayout>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/chat_Rcv"
+        android:id="@+id/chat_rcv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
